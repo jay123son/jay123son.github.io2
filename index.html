@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jayson Costa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo">Jayson Costa</td>
+                <td id="navigation">
+                    <a href="#projects">projects</a>
+                    <a href="#bio">about</a>
+                    
+                    <a href="#contact">contact</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h1>What's Up, I'm Jayson, Let's Get to Work!</h1>
+                <!-- <a href="https://google.com" class="btn btn-primary">Go to Google</a>
+                <button class="btn_one">Resume</button><br> -->
+                <button class="btn_one"onclick="window.location.href='https://docs.google.com/document/d/1ISHfl71yeI8tRnCbNbINAkI-PjmU6KBmKFJ5Jv601og/edit#heading=h.ocvpswguxa6m';">
+                    Resume
+                  </button>
+                <table>
+                    <tr>
+                        <ui><a href="https://github.com/jay123son" class="social"><span class="fab fa-github"></span></a></ui>
+                        <ui><a href="https://www.linkedin.com/in/jayson-costa-10a284240/" class="social"><span class="fab fa-linkedin"></span></a></ui>
+                        
+                        
+    
+    
+                    </tr>
+                    
+                </table>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+    <div id="work">
+        <h1>projects</h1>
+        <div id="photos">
+            <img onclick="magnify($(this).attr('src'))" src="https://i.imgur.com/uU7PGLN.png">
+            <a href="https://jay123son.github.io/project-one/">Guess The Rapper</a>
+            <img onclick="magnify($(this).attr('src'))" src="https://i.imgur.com/rQ0oIaG.jpg">
+            <a href="https://gleeful-kashata-794064.netlify.app/">TopAlbum</a>
+            <img onclick="magnify($(this).attr('src'))" src="https://i.imgur.com/EOHWNJE.png">
+            <a href="https://project3-frontend-indol.vercel.app/location/6398d3039ffe0e09c7674646">Travel App</a>
+        </div>
+    </div>
+    <div id="bio">
+        <h1>about</h1>
+        <p>
+            I am a dynamic and detail-oriented  software engineer with boot camp experience. Proficient in a variety of programming languages including HTML, CSS, JavaScript, Python. Strong problem solving skills in a track record of successfully delivering projects on time. Seeking a challenging software engineer position where I can use my skills and experience to make a positive impact.
+        </p>
+        <img onclick="magnify($(this).attr('src'))" src="https://i.imgur.com/Qknj3o4.jpg">
+
+    </div>
+    <div id="contact">
+        <h1>contact</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                    <td><i class="fas fa-phone"></i> &nbsp; +1 508 360 2800</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; costajayson@yahoo.com</td>
+                                </tr>
+                        
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        Barnstable<br>
+                                        Massachusetts,<br>
+                                        United States
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <form>
+                            <input type="text" placeholder="name" required>
+                            <input type="email" placeholder="email" required><br>
+                            <textarea placeholder="your message" required rows="5"></textarea><br>
+                            <button class="btn_one">send</button>
+                        </form> 
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <div id="footer">
+        made on earth by a human <br> <a href="https://imfunniee.github.io">imfunniee</a>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
